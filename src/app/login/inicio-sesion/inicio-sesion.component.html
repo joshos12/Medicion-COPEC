@@ -1,0 +1,18 @@
+<div fxLayout="row">
+    <div fxFlex="80" class="img">
+    </div>
+    <div fxFlex="20" fxFlex.lt-lg="25" fxFlex.lt-sm="49" style="text-align: center !important;" class="form">
+        <form [formGroup]="loginForm">
+            <h1 class="mt-5">{{'Medicion copec' | uppercase}}</h1>
+            <span class="p-input-icon-left" style="margin-top: 200px;">
+                <i class="pi pi-user"></i>
+                <input type="text" pInputText  placeholder="Ingrese usuario..." formControlName="usuario">         
+            </span>
+            <span class="p-input-icon-left mt-5">
+                <input type="password" pInputText  placeholder="Ingrese usuario..." formControlName="contraseña">         
+            </span>
+            <br>
+            <button pButton type="button" class="p-button-info" style="margin-top: 100px;">Ingresar</button>
+        </form>
+    </div>
+</div>
